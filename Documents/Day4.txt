@@ -1,0 +1,9 @@
+Day 4: Middleware and Routing in Express.js
+
+Using middleware:
+app.use(express.json()); // Built-in middleware for JSON parsing
+
+Router Example:
+const userRouter = express.Router();
+userRouter.get("/", (req, res) => res.send("Users List"));
+app.use("/users", userRouter);

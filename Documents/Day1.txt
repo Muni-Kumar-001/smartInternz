@@ -1,0 +1,13 @@
+Day 1: Introduction to Backend and Node.js
+
+What is backend development?
+Introduction to Node.js and its features.
+
+Install Node.js:
+node -v  # Check installed version
+npm -v   # Check npm version
+
+
+Run a simple Node.js script;
+
+console.log("Hello, Node.js!");

@@ -1,0 +1,14 @@
+Day 2: Setting Up Node.js and NPM
+
+Initialize a Node.js project:
+mkdir backend-app && cd backend-app
+npm init -y
+
+Install Express.js:
+npm install express
+
+Basic Express.js server:
+const express = require("express");
+const app = express();
+app.get("/", (req, res) => res.send("Hello, Express!"));
+app.listen(3000, () => console.log("Server running on port 3000"));

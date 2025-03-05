@@ -1,0 +1,26 @@
+Day 21: Security Best Practices
+
+Environment variables for secrets.
+Rate limiting for requests.
+
+
+Day 22: Deploying on Render/Heroku
+
+Setup Render or Heroku for deployment.
+
+
+Day 23: Connecting Frontend (React/Angular) with Backend
+
+API integration with frontend applications.
+
+
+Day 24: Caching and Performance Optimization
+
+Using Redis for caching.
+
+
+
+Day 25: Final Project and Deployment
+
+Build a Full CRUD API.
+Deploy the complete project.

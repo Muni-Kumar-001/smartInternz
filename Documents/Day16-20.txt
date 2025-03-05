@@ -1,0 +1,43 @@
+Day 16: Creating API Endpoints
+
+GET and POST requests with MongoDB:
+app.post("/users", async (req, res) => {
+  const user = new User(req.body);
+  await user.save();
+  res.json(user);
+});
+
+
+Day 17: Authentication with JWT
+
+Install JWT:
+npm install jsonwebtoken
+
+Generate Token:
+const jwt = require("jsonwebtoken");
+const token = jwt.sign({ userId: "123" }, "secret_key");
+
+
+Day 18: Middleware for Authentication
+
+Verify token:
+function auth(req, res, next) {
+  const token = req.header("Authorization");
+  jwt.verify(token, "secret_key", (err, decoded) => {
+    if (err) return res.status(401).send("Unauthorized");
+    req.user = decoded;
+    next();
+  });
+}
+
+
+Day 19: Error Handling in APIs
+
+Global error handler:
+app.use((err, req, res, next) => {
+  res.status(500).json({ error: err.message });
+});
+
+
+Day 20: Testing APIs with Postman
+Testing endpoints: GET, POST, PUT, DELETE.

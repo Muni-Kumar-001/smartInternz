@@ -1,0 +1,6 @@
+Day 3: Understanding RESTful APIs and HTTP Method
+
+REST API (GET, POST, PUT, DELETE) basics.
+Create routes:
+app.get("/users", (req, res) => res.json({ message: "Get users" }));
+app.post("/users", (req, res) => res.json({ message: "User added" }));

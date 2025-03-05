@@ -1,0 +1,42 @@
+Day 6: Working with File System (fs Module)
+
+Read a file:
+const fs = require("fs");
+fs.readFile("file.txt", "utf8", (err, data) => console.log(data));
+
+
+Day 7: Asynchronous JavaScript (Callbacks, Promises, Async/Await)
+
+Using Promises:
+function fetchData() {
+  return new Promise((resolve) => setTimeout(() => resolve("Data loaded"), 1000));
+}
+fetchData().then(console.log);
+
+
+Day 8: Handling Errors in Node.js
+
+Try-Catch in Async/Await:
+async function getData() {
+  try {
+    let data = await fetchData();
+    console.log(data);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+getData();
+
+Day 9: Building a Simple API with Express
+
+Simple API structure:
+app.get("/api", (req, res) => res.json({ message: "API is working" }));
+
+Day 10: Debugging and Logging
+
+Use morgan for logging:
+npm install morgan
+
+Integrate in Express:
+const morgan = require("morgan");
+app.use(morgan("dev"));
